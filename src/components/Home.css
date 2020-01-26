@@ -1,0 +1,25 @@
+.body-text {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background: grey;
+    color: whitesmoke;
+    border-radius: 12px;
+}
+
+.body-image {
+    max-width: auto;
+    height: 300px;
+    align-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.home-style {
+    background-image: url(`${process.env.PUBLIC_URL}/downloadedImage/allPokemon.jpg`);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,82,9,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 12px;
+}

@@ -1,15 +1,28 @@
 import React from "react";
 import "./App.css";
-import pokemonData from "./pokemon/pokemon";
-import PokemonCard from "./components/PokemonCard"
-
-const bulbasaur = pokemonData[0];
+import PokemonGallery from "./components/PokemonGallery";
+import Home from "./components/Home";
+import About from "./components/About";
+import routelink from "./constants/route";
+import { BrowserRouter, Link, Route, Switch, Redirect } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <PokemonCard pokemon={bulbasaur} />
-    </div>
+    <BrowserRouter>
+      <header className="navbar">
+        <Link to={routelink.home}>Home</Link>
+        <Link to={routelink.about}>About</Link>
+        <Link to={routelink.gallery}>Gallery</Link>
+      </header>
+      <div>
+        <Switch>
+          <Route path={routelink.home} component={Home} />
+          <Route path={routelink.about} component={About} />
+          <Route path={routelink.gallery} component={PokemonGallery} />
+          <Redirect to={routelink.home} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

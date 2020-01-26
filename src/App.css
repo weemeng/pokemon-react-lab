@@ -1,2 +1,14 @@
-.App {
+.navbar {
+    background-color: brown;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.navbar a{
+    float:left;
+    color:yellow;
+    text-align: center;
+    padding: 4px 14px;
+    text-decoration: yellowgreen;
+    font-size: 17px;
 }

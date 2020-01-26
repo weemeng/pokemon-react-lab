@@ -24,12 +24,23 @@
   margin-bottom: 0px;
   font-size: small;
 }
-/* .pokemon-card * {
-  margin: 0;
-} */
+
 .pokemon-card__type {
   font-size: 0.9rem;
   margin: 2px;
+}
+
+.pokemon-card__image {
+   /* image-rendering: optimizeQuality; */
+   max-width: 200px;
+   height:200px;
+   border: thin;
+   align-items: center;
+}
+
+.input-Search-Bar {
+  width: 300px;
+  align-self: center;
 }
 
 .grass {
@@ -39,21 +50,78 @@
   padding: 0.1em;
 }
 
+.fire {
+  background-color: orange;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
+.water {
+  background-color: blue;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
+.electric {
+  background-color: yellow;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
+.ground {
+  background-color: brown;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
+.fairy {
+  background-color: violet;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
 .poison {
   background-color: purple;
   color: #ffffff;
   border-radius: 5%;
-  padding: 0.1em;
+  padding: 0.2em;
 }
+
+.bug {
+  background-color: yellowgreen;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
+.flying {
+  background-color: lightskyblue;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+.normal {
+  background-color: gainsboro;
+  color: #000000;
+  border-radius: 5%;
+  padding: 0.2em;
+}
+
+/* .pokemon-card__div {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+} */
 /*
-  .pokemon-card__div {
-    width: 120px;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-  }
+  
   
   .pokemon-card__image {
     height: 70%;

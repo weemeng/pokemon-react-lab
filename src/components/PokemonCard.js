@@ -23,18 +23,22 @@ function PokemonCard({ pokemon }) {
       <div>
         <img
           src={`${process.env.PUBLIC_URL}/pokemonImage/${id}.png`}
+          class="pokemon-card__image"
           alt="test"
-          width="200"
         ></img>
       </div>
-      <SetMainName engname={name.english} japname={name.japanese} chiname={name.chinese}/>
+      <SetMainName
+        engname={name.english}
+        japname={name.japanese}
+        chiname={name.chinese}
+      />
       <div className="pokemon-card__type">
         {type.map(pokeType => {
           return <SetType type={pokeType} />;
         })}
       </div>
-      {Object.entries(base).map((sepBase,index) => {
-          return <SetStatText statname={sepBase[0]} name={sepBase[1]} />
+      {Object.entries(base).map((sepBase, index) => {
+        return <SetStatText statname={sepBase[0]} name={sepBase[1]} />;
       })}
     </div>
   );

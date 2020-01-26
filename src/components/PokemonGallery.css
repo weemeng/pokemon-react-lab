@@ -1,0 +1,8 @@
+.pokemon-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  /* margin-block-end: 0rem; */
+}
