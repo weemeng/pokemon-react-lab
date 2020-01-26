@@ -37,8 +37,20 @@ class About extends React.Component {
 //         imageData: resp.data.pipe(fs.createWriteStream("image.jpg"))
 //     });
 //   }
+  getWindowSize() {
+    let heightWindow = window.innerHeight;
+    let widthWindow = window.innerWidth;
+    let windowSize = 0;
+    if (heightWindow >= widthWindow) {
+      windowSize = widthWindow;
+    } else {
+      windowSize = heightWindow;
+    }
+    return windowSize
+  }
   render() {
     // this.getImage();
+    
     return (
       <div className="about-profile">
         <header>About the Creator</header>
@@ -47,7 +59,7 @@ class About extends React.Component {
         <img
           src="https://scontent.fsin2-1.fna.fbcdn.net/v/t1.0-9/1508573_10152860854262753_8069599316435852797_n.jpg?_nc_cat=103&_nc_ohc=fbCc0jn0x4gAX_pOFfq&_nc_ht=scontent.fsin2-1.fna&oh=c9f43ee7c90e2f1a3d2e440215763e81&oe=5EDBE295"
           alt="profile"
-          height={window.innerHeight*5/6}
+          width={this.getWindowSize()*2/3}
           className="about-profile__image"
         ></img>
         </div>
