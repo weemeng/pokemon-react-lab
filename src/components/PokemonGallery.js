@@ -49,7 +49,7 @@ class PokemonGallery extends React.Component {
   generatePokemon(pokemonData, filterInput) {
     const pokefilter = pokemonData
       .filter(filterVal =>
-        filterVal.name.english.toLowerCase().includes(filterInput)
+        filterVal.name.english.toLowerCase().includes(filterInput.toLowerCase())
       )
       .map(pokemon => {
         return <PokemonCard pokemon={pokemon} />;
