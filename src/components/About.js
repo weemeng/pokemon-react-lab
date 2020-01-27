@@ -40,13 +40,7 @@ class About extends React.Component {
   getWindowSize() {
     let heightWindow = window.innerHeight;
     let widthWindow = window.innerWidth;
-    let windowSize = 0;
-    if (heightWindow >= widthWindow) {
-      windowSize = widthWindow;
-    } else {
-      windowSize = heightWindow;
-    }
-    return windowSize
+    return heightWindow >= widthWindow ? widthWindow : heightWindow;
   }
   render() {
     // this.getImage();
